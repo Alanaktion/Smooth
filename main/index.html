@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+	<title>Smooth UI Sample</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" href="css/retina.css">
+	<link rel="stylesheet" href="css/smooth.css" id="smooth-css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="author" content="Alan Hardman (http://imalan.tk)">
+	<style type="text/css">
+		body {
+			margin-top: 60px;
+		}
+		.brand {
+			margin-left: 0 !important;
+		}
+	</style>
+	<script type="text/javascript">
+		function s_on() {
+			document.getElementById('smooth-css').rel = 'stylesheet';
+		}
+		function s_off() {
+			document.getElementById('smooth-css').rel = 'alternate stylesheet';
+		}
+	</script>
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<a class="brand" href="#">Smooth UI</a>
+			<ul class="nav" role="navigation">
+				<li class="active"><a href="#">Stream</a></li>
+				<li><a href="#">News&ensp;<span class="badge badge-important">3</span></a></li>
+				<li><a href="#">Games</a></li>
+			</ul>
+			<form class="form-search navbar-search pull-left" action="#" method="get" onSubmit="return false;">
+				<div class="input-append">
+					<input type="text" name="q" class="search-query" placeholder="Search" id="search" autocomplete="off">
+					<button type="submit" class="btn btn-inverse"><i class="icon-search icon-white"></i></button>
+				</div>
+			</form>
+			<ul class="nav pull-right">
+				<li class="dropdown">
+					<a href="#" id="usermenu" class="navbar-link dropdown-toggle" data-toggle="dropdown">
+						User Name <b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="usermenu">
+						<li><a href="#"><i class="icon-user"></i> Profile</a></li>
+						<li><a href="#"><i class="icon-wrench"></i> Settings</a></li>
+						<li class="divider"></li>
+						<li><a href="#"><i class="icon-edit"></i> Moderation</a></li>
+						<li><a href="#"><i class="icon-tasks"></i> Site Administration</a></li>
+						<li class="divider"></li>
+						<li><a href="#"><i class="icon-off"></i> Log Out</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div><!-- /.navbar -->
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<p class="alert alert-success span6"><strong>Success</strong> - Everything went well!</p>
+			<p class="alert span6"><strong>Warning</strong> - A little warning!</p>
+		</div>
+		<div class="row-fluid">
+			<p class="alert alert-info span6"><strong>General</strong> - Just regular information</p>
+			<p class="alert alert-error span6"><strong>Error</strong> - Something has gone wrong!</p>
+		</div>
+		<div class="row-fluid">
+			<p>See the difference:</p>
+			<div class="btn-group">
+				<button onClick="s_on()" class="btn">Smooth UI</button>
+				<button onClick="s_off()" class="btn">Bootstrap</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
