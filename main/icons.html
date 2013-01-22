@@ -1,150 +1,20 @@
 <!doctype html>
 <html>
 <head>
-	<title>Smooth UI Sample</title>
+	<title>Glyphicons</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
 	<link rel="stylesheet" href="css/smooth.css" id="smooth-css">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="author" content="Alan Hardman (http://imalan.tk)">
 	<style type="text/css">
-		html,body {
-			height: 100%;
-		}
 		body {
-			padding-top: 60px;
-			box-sizing: border-box;
-			-moz-box-sizing: border-box;
-		}
-		.brand {
-			margin-left: 0 !important;
-		}
-		.footer {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			text-align: center;
-		}
-		.modal-inline {
-			position: static;
-			width: 100%;
-			top: auto;
-			left: auto;
-			margin: 0;
+			margin-bottom: 30px;
 		}
 	</style>
-	<script type="text/javascript">
-		function s_on() {
-			document.getElementById('smooth-css').rel = 'stylesheet';
-		}
-		function s_off() {
-			document.getElementById('smooth-css').rel = 'alternate stylesheet';
-		}
-	</script>
-	<script src="js/jquery-1.7.2.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="navbar-inner">
-			<a class="brand" href="#">Smooth UI</a>
-			<ul class="nav" role="navigation">
-				<li class="active"><a href="#"><i class="icon-home icon-white"></i>&ensp;Dashboard</a></li>
-				<li><a href="#"><i class="icon-inbox icon-white"></i>&ensp;Inbox &ensp;<span class="label label-important">3</span></a></li>
-				<li><a href="#"><i class="icon-list-alt icon-white"></i>&ensp;News</a></li>
-			</ul>
-			<form class="form-search navbar-search pull-left" action="#" method="get" onSubmit="return false;">
-				<div class="input-append">
-					<input type="text" name="q" class="search-query" placeholder="Search" id="search" autocomplete="off">
-					<button type="submit" class="btn btn-inverse"><i class="icon-search icon-white"></i></button>
-				</div>
-			</form>
-			<ul class="nav pull-right">
-				<li class="dropdown">
-					<a href="#" id="usermenu" class="navbar-link dropdown-toggle" data-toggle="dropdown">
-						<i class="icon-user icon-white"></i>&ensp;User Menu <b class="caret"></b>
-					</a>
-					<ul class="dropdown-menu" role="menu" aria-labelledby="usermenu">
-						<li><a href="#"><i class="icon-user"></i> Profile</a></li>
-						<li><a href="#"><i class="icon-wrench"></i> Settings</a></li>
-						<li class="divider"></li>
-						<li><a href="#"><i class="icon-edit"></i> Moderation</a></li>
-						<li><a href="#"><i class="icon-tasks"></i> Site Administration</a></li>
-						<li class="divider"></li>
-						<li><a href="#"><i class="icon-off"></i> Log Out</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-	</div><!-- /.navbar -->
-	<div class="container-fluid">
-		<div class="row-fluid">
-			<p class="alert alert-success span6"><strong>Success</strong> - Everything went well!</p>
-			<p class="alert span6"><strong>Warning</strong> - A little warning!</p>
-		</div>
-		<div class="row-fluid">
-			<p class="alert alert-info span6"><strong>General</strong> - Just regular information</p>
-			<p class="alert alert-error span6"><strong>Error</strong> - Something has gone wrong!</p>
-		</div>
-		<div class="row-fluid">
-			<div class="span6">
-				<h3>Changed Elements</h3>
-				<p>Buttons<br>
-					<button class="btn">Button</button>
-					<button class="btn btn-primary">Primary</button>
-					<button class="btn btn-danger">Danger</button>
-					<button class="btn btn-info">Info</button>
-					<button class="btn btn-success">Success</button>
-					<button class="btn btn-warning">Warning</button>
-					<button class="btn btn-inverse">Inverse</button>
-					<button class="btn btn-link">Link</button>
-				</p>
-				<p>Text Input<br>
-					<input type="text" placeholder="Text Input"><br>
-					<textarea placeholder="Text Area"></textarea>
-				</p>
-				<p>Badges<br>
-					<span class="badge">Badge</span>
-					<span class="badge badge-primary">Primary</span>
-					<span class="badge badge-important">Important</span>
-					<span class="badge badge-info">Info</span>
-					<span class="badge badge-success">Success</span>
-					<span class="badge badge-warning">Warning</span>
-					<span class="badge badge-inverse">Inverse</span>
-				</p>
-				<p>Labels<br>
-					<span class="label">Label</span>
-					<span class="label label-primary">Primary</span>
-					<span class="label label-important">Important</span>
-					<span class="label label-info">Info</span>
-					<span class="label label-success">Success</span>
-					<span class="label label-warning">Warning</span>
-					<span class="label label-inverse">Inverse</span>
-				</p>
-			</div>
-			<div class="span6">
-				<p class="well">See the difference:<br>
-					<label><input type="radio" onClick="s_on()" name="ui" checked> Smooth UI</label>
-					<label><input type="radio" onClick="s_off()" name="ui"> Bootstrap</label>
-				</p>
-				<div class="modal modal-inline">
-					<div class="modal-header">
-						<button type="button" class="close">&times;</button>
-						<h3>Modal Title</h3>
-					</div>
-					<div class="modal-body">
-						<p>Modal body</p>
-					</div>
-					<div class="modal-footer">
-						<button class="btn btn-small">Close</button>
-						<button class="btn btn-primary btn-small">OK</button>
-					</div>
-				</div>
-				<div class="well" style="height:100px;margin-top:20px;overflow-y:scroll;">
-<div class="span4">
+	<div class="container">
+		<h1 class="page-header">Glyphicons <small>in Twitter Bootstrap</small></h1>
+		<div class="row">
+<div class="span3">
 <i class="icon-glass"></i> icon-glass<br>
 <i class="icon-music"></i> icon-music<br>
 <i class="icon-search"></i> icon-search<br>
@@ -180,6 +50,8 @@
 <i class="icon-lock"></i> icon-lock<br>
 <i class="icon-flag"></i> icon-flag<br>
 <i class="icon-headphones"></i> icon-headphones<br>
+</div>
+<div class="span3">
 <i class="icon-volume-off"></i> icon-volume-off<br>
 <i class="icon-volume-down"></i> icon-volume-down<br>
 <i class="icon-volume-up"></i> icon-volume-up<br>
@@ -192,8 +64,6 @@
 <i class="icon-print"></i> icon-print<br>
 <i class="icon-camera"></i> icon-camera<br>
 <i class="icon-font"></i> icon-font<br>
-</div>
-<div class="span4">
 <i class="icon-bold"></i> icon-bold<br>
 <i class="icon-italic"></i> icon-italic<br>
 <i class="icon-text-height"></i> icon-text-height<br>
@@ -217,6 +87,8 @@
 <i class="icon-move"></i> icon-move<br>
 <i class="icon-step-backward"></i> icon-step-backward<br>
 <i class="icon-fast-backward"></i> icon-fast-backward<br>
+</div>
+<div class="span3">
 <i class="icon-backward"></i> icon-backward<br>
 <i class="icon-play"></i> icon-play<br>
 <i class="icon-pause"></i> icon-pause<br>
@@ -241,8 +113,6 @@
 <i class="icon-arrow-right"></i> icon-arrow-right<br>
 <i class="icon-arrow-up"></i> icon-arrow-up<br>
 <i class="icon-arrow-down"></i> icon-arrow-down<br>
-</div>
-<div class="span4">
 <i class="icon-share-alt"></i> icon-share-alt<br>
 <i class="icon-resize-full"></i> icon-resize-full<br>
 <i class="icon-resize-small"></i> icon-resize-small<br>
@@ -254,6 +124,8 @@
 <i class="icon-leaf"></i> icon-leaf<br>
 <i class="icon-fire"></i> icon-fire<br>
 <i class="icon-eye-open"></i> icon-eye-open<br>
+</div>
+<div class="span3">
 <i class="icon-eye-close"></i> icon-eye-close<br>
 <i class="icon-warning-sign"></i> icon-warning-sign<br>
 <i class="icon-plane"></i> icon-plane<br>
@@ -290,12 +162,7 @@
 <i class="icon-briefcase"></i> icon-briefcase<br>
 <i class="icon-fullscreen"></i> icon-fullscreen<br>
 </div>
-					<div class="clearfix"></div>
-					<p class="pagination-centered"><a href="icons.html">Icon List &rsaquo;</a></p>
-				</div>
-			</div>
 		</div>
 	</div>
-	<p class="muted footer">by <a href="http://imalan.tk">Alan</a></p>
 </body>
 </html>

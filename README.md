@@ -10,7 +10,7 @@ Currently finished:
 - Base and primary buttons
 - Badges
 
-This project includes portions of Twitter Bootsrap, licensed under the Apache License v2.0.
+This project includes portions of Twitter Bootsrap by Twitter, Inc., licensed under the Apache License v2.0.
 
 ### Live site
 http://www.cubiknetwork.com/
